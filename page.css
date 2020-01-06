@@ -1,0 +1,9 @@
+#main-div.float-container,
+#contest-nav-tabs,
+.float-container>#main-container,
+.nav-tabs>li.active>a,
+.btn-default,
+pre{
+    background: black;
+    color: lightgrey;
+}
