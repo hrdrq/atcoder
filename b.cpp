@@ -51,8 +51,8 @@ ll frac(ll n){
 
 int main() {
 #ifdef HIRO
-  string file_path(QUIZ);
-  ifstream cin(file_path + "/input.txt");
+  string quiz(QUIZ);
+  ifstream cin("input/" + quiz + ".txt");
   std::cin.rdbuf(cin.rdbuf());
 #endif
   ll ans = 0;
