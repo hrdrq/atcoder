@@ -49,10 +49,17 @@ ll frac(ll n){
 	return (n * frac(n - 1)) % MOD;
 }
 
-int main() {
+int main(int argc, char** argv) {
 #ifdef HIRO
-  string quiz(QUIZ);
-  ifstream cin("input/" + quiz + ".txt");
+  string quiz(argv[1]);
+  string id(argv[2]);
+  string filename("input/" + quiz + "/" + id + ".txt");
+  ifstream fin(filename);
+  if (fin.peek() == ifstream::traits_type::eof()) {
+    cout << "No input.";
+    return 0;
+  }
+  ifstream cin(filename);
   std::cin.rdbuf(cin.rdbuf());
 #endif
   ll ans = 0;
