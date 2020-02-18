@@ -11,6 +11,8 @@ typedef long double ld;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 typedef vector<long long> vll;
+typedef queue<int> qi;
+typedef queue< pair<int, int> > qp;
 #define mp make_pair
 #define pi 3.14159265358979323846
 #define MAX max_element
@@ -26,8 +28,12 @@ typedef vector<long long> vll;
 #define fi(init, n) for(int i = init; i < n; ++i)
 #define fj(init, n) for(int j = init; j < n; ++j)
 #define fk(init, n) for(int k = init; k < n; ++k)
+#define zero(x) memset(x, 0, sizeof(x))
+#define negative(x) memset(x, ~0, sizeof(x))
 const ll MOD = 1e9 + 7;
-const ll INF = (ll)1e18;
+const int INF = 1e9;
+const int di[] = { 0, 1, 0, -1 };
+const int dj[] = { 1, 0, -1, 0 };
 
 template<typename T>
 T gcd(T a, T b) {
