@@ -54,6 +54,20 @@ ll frac(ll n){
 	if (n == 0) return 1;
 	return (n * frac(n - 1)) % MOD;
 }
+template<class T> inline bool chmin(T& a, T b) {
+  if (a > b) {
+    a = b;
+    return true;
+  }
+  return false;
+}
+template<class T> inline bool chmax(T& a, T b) {
+  if (a < b) {
+    a = b;
+    return true;
+  }
+  return false;
+}
 
 int main(int argc, char** argv) {
 #ifdef HIRO
