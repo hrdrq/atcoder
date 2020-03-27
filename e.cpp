@@ -32,6 +32,7 @@ typedef queue< pair<int, int> > qp;
 #define fk(init, n) for(int k = init; k < n; ++k)
 #define zero(x) memset(x, 0, sizeof(x))
 #define negative(x) memset(x, ~0, sizeof(x))
+#define bitsum(x) __builtin_popcount(x)
 const ll MOD = 1e9 + 7;
 const int INF = 1e9;
 const int di[] = { 0, 1, 0, -1 };
