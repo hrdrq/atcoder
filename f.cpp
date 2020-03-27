@@ -12,7 +12,9 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 typedef vector<long long> vll;
 typedef vector< pair<int, int> > vii;
-typedef vector< pair<long, long> > vllll;
+typedef vector< pair<long long, long long> > vllll;
+typedef map<int, int> mii;
+typedef map<long long, long long> mllll;
 typedef queue<int> qi;
 typedef queue< pair<int, int> > qp;
 #define mp make_pair
