@@ -23,7 +23,7 @@ typedef queue< pair<int, int> > qp;
 #define MIN min_element
 #define all(v) v.begin(), v.end()
 #define gt(T) greater<T>()
-#define sum(v) accumulate(v.begin(), v.end(), 0)
+#define sum(v) accumulate(v.begin(), v.end(), 0ll)
 #define uni(v) do{ \
   sort(v.begin(), v.end()); \
   decltype(v)::iterator result = unique(v.begin(), v.end()); \
